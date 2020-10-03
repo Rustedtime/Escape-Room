@@ -7,15 +7,20 @@
 #define ITEM_H
 
 #include "gameObject.h"
+#include "container.h"
+#include <iostream>
 
 class Item: public GameObject
 {
     public:
-    Item(): inventoryStatus(false) {}
-    bool isInInventory();
-    void take();
+    Item();
+    Item(int keyId, std::string name, std::string description);
+    void use(Container & target);
+    void look();
+
     private:
-    bool inventoryStatus;
+    int keyId;
+    std::string description;
 };
 
 
