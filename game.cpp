@@ -17,3 +17,9 @@ void Game::playGame()
 {
 
 }
+
+// help command
+void Game::help()
+{
+    
+}

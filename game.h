@@ -17,6 +17,7 @@ class Game
     std::string command;
     void handleCommand(std::string command, std::string target = std::string());
     void playGame();
+    void help();
 
     public:
     Game();
