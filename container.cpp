@@ -8,7 +8,7 @@ Container::Container()
     locked = false;
     opened = false;
     keyId = 0;
-    name = "undefined_box";
+    name = "undefined_container";
 }
 
 // Non-default constructor
