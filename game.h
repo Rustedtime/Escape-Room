@@ -8,19 +8,23 @@
 #include <vector>
 #include <iostream>
 #include "item.h"
+#include "container.h"
 
 class Game
 {
     private:
-    std::vector<GameObject> environment;
-    std::vector<Item> items;
+    std::vector<Container*> containers;
+    std::vector<Item*> inventory;
     std::string command;
-    void handleCommand(std::string command, std::string target = std::string());
+    void handleCommand(std::string command);
+    void handleCommand(std::string command, std::string obj, std::string target);
+    void handleCommand(std::string command, std::string target);
     void playGame();
     void help();
 
     public:
     Game();
+    ~Game();
     void startGame();
 };
 
