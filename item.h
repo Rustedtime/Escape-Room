@@ -16,6 +16,7 @@ class Item: public GameObject
     Item();
     Item(int keyId, std::string name, std::string description);
     void use(Container & target);
+    void use();
     void look();
 
     private:

@@ -23,6 +23,11 @@ void Item::use(Container & target)
     target.unlock(keyId);
 }
 
+void Item::use()
+{
+    std::cout << "Nothing interesting happens.\n";
+}
+
 // Describe the object
 void Item::look()
 {

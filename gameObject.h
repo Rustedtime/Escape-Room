@@ -10,8 +10,9 @@
 class GameObject
 {
     public:
-    virtual void look();
-    virtual void use(GameObject &target);
+    virtual void look() = 0;
+    virtual void use() = 0;
+    std::string getName() { return name; }
 
     protected:
     std::string name;
